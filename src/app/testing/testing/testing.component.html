@@ -1,0 +1,52 @@
+<h4>Mat Table</h4>
+<div class="main">
+<table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="index">
+       <th mat-header-cell *matHeaderCellDef>No.</th>
+       <td mat-cell *matCellDef="let i=index">{{i+1}}</td>
+    </ng-container>
+    <!--Player Name-->
+    <ng-container matColumnDef="PlayerName"  class="mat-elevation-z8">
+      <th mat-header-cell *matHeaderCellDef>Player</th>
+      <td mat-cell *matCellDef="let record">{{record.PlayerName}}</td>
+   </ng-container>
+    <!--Current Score-->
+       <ng-container matColumnDef="CurrentScore">
+        <th mat-header-cell *matHeaderCellDef>Score</th>
+        <td mat-cell *matCellDef="let record">{{record.CurrentScore}}</td>
+     </ng-container>
+    <!--Highest Score-->
+    <ng-container matColumnDef="HighestScore">
+      <th mat-header-cell *matHeaderCellDef>Highest</th>
+      <td mat-cell *matCellDef="let record">{{record.HighestScore}}</td>
+   </ng-container>
+
+   <tr mat-header-row *matHeaderRowDef="ColumnHeader"></tr>
+   <tr mat-row *matRowDef="let row; columns:ColumnHeader;"></tr>
+</table>
+
+<table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="index">
+       <th mat-header-cell *matHeaderCellDef>No.</th>
+       <td mat-cell *matCellDef="let i=index">{{i+1}}</td>
+    </ng-container>
+    <!--Player Name-->
+    <ng-container matColumnDef="PlayerName"  class="mat-elevation-z8">
+      <th mat-header-cell *matHeaderCellDef>Player</th>
+      <td mat-cell *matCellDef="let record">{{record.PlayerName}}</td>
+   </ng-container>
+    <!--Current Score-->
+       <ng-container matColumnDef="CurrentScore">
+        <th mat-header-cell *matHeaderCellDef>Avg</th>
+        <td mat-cell *matCellDef="let record">{{record.CurrentScore/record.NoMatches | number:'1.0-0'}}</td>
+     </ng-container>
+    <!--Highest Score-->
+    <ng-container matColumnDef="HighestScore">
+      <th mat-header-cell *matHeaderCellDef>Highest</th>
+      <td mat-cell *matCellDef="let record">{{record.HighestScore}}</td>
+   </ng-container>
+
+   <tr mat-header-row *matHeaderRowDef="ColumnHeader"></tr>
+   <tr mat-row *matRowDef="let row; columns:ColumnHeader;"></tr>
+</table>
+</div>
