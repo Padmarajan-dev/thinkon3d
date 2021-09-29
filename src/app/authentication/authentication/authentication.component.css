@@ -1,0 +1,26 @@
+.container{
+    width: 90%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    display: inline;
+}
+
+.banner{
+    width: 50%;
+}
+
+.slideimage{
+    width: 45rem;
+    height: 40rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.divider{
+    width: 0.4rem;
+    background: black;
+    height: 40rem;
+
+}
