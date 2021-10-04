@@ -7,7 +7,7 @@ import { SharableModule } from '../sharable/sharable.module';
 
 
 @NgModule({
-  declarations: [TestingComponent],
+  declarations: [],
   imports: [
     CommonModule,
     TestingRoutingModule,

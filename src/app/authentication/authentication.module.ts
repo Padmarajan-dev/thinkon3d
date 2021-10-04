@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
-import { AuthenticationRoutingModule } from './authentication-routing.module';
-import { AuthenticationComponent } from './authentication/authentication.component';
-import { SharableModule } from '../sharable/sharable.module';
-import { SignupComponent } from './signup/signup.component';
-import { SigninComponent } from './signin/signin.component';
+import { CommonModule } from '@angular/common';
 import { SeriesofimageDirective } from '../Directives/seriesofimage.directive';
+import { AuthenticationComponent } from './authentication/authentication.component';
+import { AuthenticationRoutingModule } from './authentication-routing.module';
+import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
+import { SharableModule } from '../sharable/sharable.module';
 
 
 
 @NgModule({
-  declarations: [AuthenticationComponent, SignupComponent, SigninComponent,SeriesofimageDirective],
+  declarations: [SeriesofimageDirective,AuthenticationComponent,SigninComponent,SignupComponent],
   imports: [
-    AuthenticationRoutingModule,
-    SharableModule
+    SharableModule,
+    CommonModule,
+    AuthenticationRoutingModule
   ]
 })
 export class AuthenticationModule { }

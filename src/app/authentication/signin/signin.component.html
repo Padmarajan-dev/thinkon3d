@@ -1,1 +1,25 @@
-<p>signin works!</p>
+<!--Username Input-->
+<div class="login-inputs">
+<div class="form-group">
+    <label>Username</label>
+    <div class="form-input">
+        <i class="fa fa-user"></i>
+        <input type="text">
+    </div>
+  </div>
+<!--Password Input-->
+<div class="form-group">
+    <label>Password</label>
+    <div class="form-input">
+        <i class="fa fa-lock"></i>
+        <input type="password" #pass>
+        <i *ngIf="!show" (click)="show=!show;hide=!hide;pass.type='text'" class="fa fa-eye append-icon"></i>
+        <i *ngIf="!hide"(click)="show=!show;hide=!hide;pass.type='password'" class="fa fa-eye-slash append-icon"></i>
+    </div>
+</div>
+<!--Sign in Button-->
+<div>
+    <button class="signin">Signin</button>
+</div>
+<p class="register-msg">Not a user? <a href="#"> Register</a></p>
+</div>
