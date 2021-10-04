@@ -34,7 +34,6 @@ export class SeriesofimageDirective {
   },2000);
   }
   ChangeImage() {
-    console.log("Function called on directive");
     if(this.index<this.slide.length-1)
     {
       this.index +=1;
@@ -42,7 +41,6 @@ export class SeriesofimageDirective {
     {
         this.index =0;
     }
-    console.log(this.index+"=="+this.slide.length);
     this.ImageSource = this.slide[this.index].image;
   }
    

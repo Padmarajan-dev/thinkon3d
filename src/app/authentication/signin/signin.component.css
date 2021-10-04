@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Jost:wght@300&display=swap');
+.form-group {
+    margin-top: 1.2rem;
+    margin-right: 3.6rem;
+}
+
+/* for button */
+.signin {
+    background: #364547;
+    box-shadow: -3px 4px 8px #635a5a, 3px 3px 7px rgb(6 9 12 / 64%);
+    border: none;
+    font-size: 1.1rem;
+    width: 15rem;
+    font-weight: bold;
+    color: #FAFF00;
+    padding: 0.6rem;
+    margin-top: 2.6rem;
+    margin-left: 3.6rem;
+    border-radius: 2rem;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+/*for Custom form input with div*/
+.form-input{
+    display: inline-flex;
+    border: none;
+    margin-top: 0.6rem;
+    padding: 0.5rem;
+    border-radius: 1.3rem;
+    width: 104%;
+    box-shadow: inset -3px 4px 8px #2b2727d6, inset 3px 3px 7px rgb(0 0 0 / 24%);
+}
+   
+.fa{
+    margin-bottom: auto;
+    margin-top: auto;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    color: #d1c9fb;
+}
+.append-icon {
+    margin-right: 0.4rem !important;
+}
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #FAFF00;
+    font-family: 'Gemunu Libre', sans-serif;
+    margin-left: 0.3rem;
+}
+.fa-eye-slash 
+{
+   color: #FAFF00;
+}
+input {
+    width: 15rem;
+    margin-top: 0.15rem;
+    color: white;
+    background: transparent;
+    margin-right: auto;
+    margin-left: 0.3rem;
+    padding: 0.3rem;
+    border: none;
+    display: block;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.register-msg{
+    margin-top: 2.3rem;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    color: #FAFF00;
+}
+
+a{
+    color:aliceblue;
+}
+
+@media screen and (max-width: 1024px){
+    .form-input
+    {
+        width: 17rem;
+        border-radius: 1.9rem;
+    }
+   .append-icon
+    {
+     margin-right: 5rem !important;
+     margin-left: -1rem;
+    }
+
+    .signin{
+        margin-left: 1.6rem;
+    }
+}
+
+/* for mobile and tablet */
+@media only screen and (max-width: 768px) {
+
+    .form-group {
+      margin-top: 1.2rem;
+      margin-left: 31%;
+    }
+  
+    .signin {
+        margin-left: 16.2rem;
+      }
+  }
+
+  /*for mobile device */
+  @media only screen and (max-width: 767px) {
+    .form-group {
+        margin-top: 1.6rem;
+        margin-left: 21%;
+        padding: 0.3rem;
+        width: 102%;
+    }
+    label{
+        display: block;
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin-left: 0.4rem;
+    }
+    
+    .form-input {
+        width: 25rem;
+    }
+    
+    .fa {
+        margin-bottom: auto;
+        margin-top: auto;
+        font-size: 2.1rem;
+        margin-left: 0.5rem;
+        color: #d1c9fb;
+    }
+    
+    input {
+        width: 18rem;
+        margin-top: 0.15rem;
+        margin-right: auto;
+        margin-left: 4.3rem;
+    }
+    
+    .append-icon{
+        margin-right: 5rem !important;
+        margin-left: 2rem;
+    }
+    .signin {
+        font-size: 1.5rem;
+        margin-left: 16.3rem;
+    }
+
+    .register-msg{
+        margin-top: 2.5rem;
+        font-size: 1.7rem;
+    }
+}

@@ -1,14 +1,17 @@
-.container{
+.container {
     width: 90%;
     border: 1px solid black;
+    height: 40.5rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
-    display: inline;
+    display: inline-flex;
+    background: #364547;
+    overflow-x: hidden;
 }
-
 .banner{
     width: 50%;
+    display: grid;
 }
 
 .slideimage{
@@ -18,9 +21,89 @@
     margin-left: 0.3rem;
 }
 
-.divider{
-    width: 0.4rem;
-    background: black;
-    height: 40rem;
 
+.divider{
+    margin-top: 0.3rem;
+    margin-right: 0.6rem;
 }
+
+svg{
+    height: 100.75rem;
+    margin-left: 37rem;
+    width: 9rem;
+    margin-top: -40.04rem;
+}
+
+path{
+    transform: rotate(270deg);
+}
+
+.form{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10rem;
+}
+
+
+@media screen and (max-width: 1024px){
+    .container{
+        width: 100%;
+    }
+    .banner{
+        width: 70%;
+    }
+}
+
+/* for mobile and tablet */
+@media only screen and (max-width: 768px) {
+    .container{
+        display: block;
+    }
+    path{
+      transform: rotate(0deg);
+      }
+  
+      svg {
+        height: 34.3rem;
+        margin-left: -30rem;
+        width: 75.3rem;
+        margin-top: -14.9rem;
+        z-index: 1;
+    }
+    
+    .form {
+        height: 24rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: -20.4rem;
+        background: #364547;
+    }
+  }
+
+  /*for mobile devices */
+  @media only screen and (max-width: 767px) {
+    .slideimage {
+        width: 45rem;
+        height: 40rem;
+        margin-top: 0.02rem;
+        margin-left: 0.3rem;
+    }
+    svg {
+        height: 34.3rem;
+        margin-left: -30rem;
+        width: 75.3rem;
+        margin-top: -14.9rem;
+    }
+    
+    .form{
+        height: 56rem;
+        margin-left: auto;
+        width: 46rem;
+        margin-right: auto;
+        display: block;
+        margin-top: -20.9rem;
+        background: #364547;
+    }
+    }
