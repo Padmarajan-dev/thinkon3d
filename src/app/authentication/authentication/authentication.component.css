@@ -1,24 +1,29 @@
+.background{
+    background: url('../../../assets/login_background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 158.5rem;
+}
 .container {
-    width: 90%;
-    border: 1px solid black;
-    height: 40.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4rem;
+    margin-left: 20.3%;
+    width: 57%;
+    height: 78rem;
+    margin-top: 34rem;
     display: inline-flex;
     background: #364547;
-    overflow-x: hidden;
+    box-shadow: 4px 4px 7px  rgb(7, 6, 7);
 }
-.banner{
-    width: 50%;
+
+.banner {
+    width: 42%;
     display: grid;
 }
 
-.slideimage{
-    width: 45rem;
-    height: 40rem;
-    margin-top: 0.3rem;
-    margin-left: 0.3rem;
+.slideimage {
+    width: 68rem;
+    height: 78rem;
+    margin-left: 0rem;
 }
 
 
@@ -27,83 +32,184 @@
     margin-right: 0.6rem;
 }
 
-svg{
-    height: 100.75rem;
-    margin-left: 37rem;
-    width: 9rem;
-    margin-top: -40.04rem;
+svg {
+    height: 123.75rem;
+    margin-left: 59.3rem;
+    width: 12rem;
+    margin-top: -48.08rem;
 }
+
 
 path{
     transform: rotate(270deg);
 }
 
+
 .form{
-    margin-left: auto;
+    margin-left: 15%;
     margin-right: auto;
     display: block;
-    margin-top: 10rem;
+    overflow: hidden;
+    margin-top: 2rem;
+    width: 100%;
 }
 
+.Authproviderbutton
+{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 4rem;
+    margin-left: 4rem;
+    background: #364547;
+    box-shadow: -3px 4px 8px #2b2727d6, 3px 3px 7px rgb(0 0 0 / 24%);
+}
 
+.Authproviders{
+    display: flex;
+    justify-content: center;
+    margin-left: -26rem;
+}
+
+.social-icon{
+    color: hsl(180deg 30% 63%);
+    font-size: 4rem;
+    margin-left: 2.5rem;
+    margin-top: 2.3rem;
+    color: #e9ec16ee;
+}
 @media screen and (max-width: 1024px){
-    .container{
-        width: 100%;
+    .background{
+        height: 39.6rem;
+        overflow-x: hidden;
+        }
+        .container{
+            margin-left: 4.8rem;
+            width: 84%;
+            height: 32.5rem;
+            margin-top: 1.3rem;
+        }
+        
+        .slideimage{
+            width: 30rem;
+            height: 32.5rem;
+        }
+    
+      svg{
+        margin-left: 25rem;
+        width: 7rem;
+        margin-top: -53.8rem;
+       }
+    .form{
+        margin-top: -1rem;
+        width: 46%;
+        margin-left: 9.6rem;
     }
-    .banner{
-        width: 70%;
+    
+    .Authproviders {
+        margin-left: -3rem;
     }
+    
+    .Authproviderbutton {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 4rem;
+        margin-left: 2rem;
+    }
+
+    .social-icon{
+        font-size: 1.3rem;
+        margin-left: 0.5rem;
+        margin-top: 0.4rem;
+     }
+
 }
 
 /* for mobile and tablet */
 @media only screen and (max-width: 768px) {
     .container{
-        display: block;
-    }
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-left: 3.3rem;
+        width: 84%;
+        height: 37.5rem;
+        margin-top: 1.3rem;
+       }
+    .slideimage {
+        width: 40rem;
+        height: 29.5rem;
+    }       
     path{
       transform: rotate(0deg);
       }
   
       svg {
-        height: 34.3rem;
-        margin-left: -30rem;
-        width: 75.3rem;
-        margin-top: -14.9rem;
-        z-index: 1;
+        height: 20.3rem;
+        margin-left: -41rem;
+        width: 90.3rem;
+        margin-top: -8.9rem;
     }
     
     .form {
-        height: 24rem;
-        margin-left: auto;
+        height: 37rem;
+        width: 35rem;
+        margin-top: 25rem !important;
+        margin-left: -14rem;
         margin-right: auto;
         display: block;
-        margin-top: -20.4rem;
-        background: #364547;
+        margin-top: -30.4rem;
     }
   }
 
   /*for mobile devices */
   @media only screen and (max-width: 767px) {
-    .slideimage {
-        width: 45rem;
-        height: 40rem;
-        margin-top: 0.02rem;
+    .container{
+        overflow-y: scroll;
         margin-left: 0.3rem;
+        width: 96%;
+        height: 37.5rem;
+        margin-top: 1.3rem;
     }
-    svg {
-        height: 34.3rem;
-        margin-left: -30rem;
+    
+    .slideimage {
+        width: 27rem;
+        height: 33rem;
+        margin-top: 0.1rem;
+        margin-left: 0.1rem;
+    }
+    
+    svg{
+        height: 23.3rem;
+        margin-left: -45rem;
         width: 75.3rem;
-        margin-top: -14.9rem;
+        margin-top: -9.9rem;
     }
     
     .form{
-        height: 56rem;
-        margin-left: auto;
+        height: 33rem;
+        margin-left: -13rem;
         width: 46rem;
         margin-right: auto;
-        display: block;
-        margin-top: -20.9rem;
-        background: #364547;
+        margin-top: 35.1rem !important;
     }
+
+    .Authproviders{
+        margin-left: 0rem;
     }
+}
+
+@media only screen and (max-width: 320px){
+    .slideimage {
+        width: 18.9rem;
+        height: 28rem;
+    }
+    .form{
+    margin-top: 23.1rem !important;
+    }
+    .Authproviders {
+        margin-left: 4rem;
+    }
+
+    .fa {
+        font-size: 1.1rem;
+    }
+}

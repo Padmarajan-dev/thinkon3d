@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Jost:wght@300&display=swap');
-.form-group {
-    margin-top: 1.2rem;
+.form-group{
+    margin-top: 1.6rem;
     margin-right: 3.6rem;
+    width: 20rem;
+    height: 20;
 }
 
 /* for button */
@@ -9,13 +11,13 @@
     background: #364547;
     box-shadow: -3px 4px 8px #635a5a, 3px 3px 7px rgb(6 9 12 / 64%);
     border: none;
-    font-size: 1.1rem;
-    width: 15rem;
+    font-size: 2.2rem;
+    padding: 1.9rem;
+    width: 30rem;
     font-weight: bold;
     color: #FAFF00;
-    padding: 0.6rem;
-    margin-top: 2.6rem;
-    margin-left: 3.6rem;
+    margin-top: 3.1rem;
+    margin-left: 6.2rem;
     border-radius: 2rem;
     font-family: 'Gemunu Libre', sans-serif;
 }
@@ -23,30 +25,30 @@
 .form-input{
     display: inline-flex;
     border: none;
-    margin-top: 0.6rem;
-    padding: 0.5rem;
+    margin-top: 1.1rem;
+    padding: 1.5rem;
     border-radius: 1.3rem;
-    width: 104%;
+    width: 40rem;
     box-shadow: inset -3px 4px 8px #2b2727d6, inset 3px 3px 7px rgb(0 0 0 / 24%);
 }
    
 .fa{
     margin-bottom: auto;
     margin-top: auto;
-    font-size: 1.1rem;
+    font-size: 2.2rem;
     margin-left: 0.5rem;
     color: #d1c9fb;
 }
-.append-icon {
+.append-icon{
     margin-right: 0.4rem !important;
 }
 label {
     display: block;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2.3rem;
     color: #FAFF00;
     font-family: 'Gemunu Libre', sans-serif;
-    margin-left: 0.3rem;
+    margin-left: 0.5rem;
 }
 .fa-eye-slash 
 {
@@ -58,101 +60,238 @@ input {
     color: white;
     background: transparent;
     margin-right: auto;
-    margin-left: 0.3rem;
+    margin-left: 0.9rem;
     padding: 0.3rem;
     border: none;
     display: block;
-    font-size: 1.1rem;
+    font-size: 2.4rem;
     outline: none;
 }
-
 .register-msg{
-    margin-top: 2.3rem;
-    font-size: 1rem;
-    text-align: center;
+    margin-top: 3.5rem;
+    margin-left: 7.2rem;
+    font-size: 2.6rem;
     font-family: 'Jost', sans-serif;
     color: #FAFF00;
 }
-
+.other-msg
+{
+    margin-top: 3.2rem;
+    margin-left: 10.1rem;
+    font-size: 2.2rem;
+    font-family: 'Jost', sans-serif;
+    color: #72e415;
+}
+.faceexp img{
+    height: 18rem;
+    width: 18rem;
+    margin-left: 11rem;
+}
 a{
     color:aliceblue;
 }
-
+/*low Res laptops*/
 @media screen and (max-width: 1024px){
-    .form-input
-    {
-        width: 17rem;
-        border-radius: 1.9rem;
-    }
-   .append-icon
-    {
-     margin-right: 5rem !important;
-     margin-left: -1rem;
+
+    .faceexp img{
+        height: 7rem;
+        width: 7rem;
+        margin-left: 6rem;
+        margin-top: 1rem;
     }
 
-    .signin{
-        margin-left: 1.6rem;
+    .form-group{
+        margin-top: 1.6rem;
+      }
+     
+    .form-input{
+        width: 19rem;
+        border-radius: 0.8rem;
+        margin-top: 0.4rem;
+        padding: 0.1rem;
     }
+    
+    .fa{
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+        color: #d1c9fb;
+    }
+    
+    .append-icon {
+        margin-right: 5rem !important;
+        margin-left: 3rem;
+    }
+    
+    input{
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .signin {
+        margin-left: -1.2rem;
+        font-size: 0.9rem;
+        width: 17rem;
+        margin-left: 0.9rem;
+        padding: 0.9rem;
+    }
+    
+    label {
+        font-size: 0.8rem;
+    }
+    .register-msg {
+        margin-top: 1.6rem;
+        margin-left: 4.8rem;
+        font-size: 0.9rem;
+    }
+    .other-msg {
+        margin-top: 0.2rem;
+        margin-left: 5.4rem;
+        font-size: 0.8rem;
+    }
+    
 }
 
 /* for mobile and tablet */
 @media only screen and (max-width: 768px) {
 
-    .form-group {
-      margin-top: 1.2rem;
-      margin-left: 31%;
+    .form-group{
+        margin-top: 1.2rem;
+        margin-left: 22%;
     }
-  
-    .signin {
-        margin-left: 16.2rem;
-      }
+    
+    .signin{
+        margin-left: 9.2rem;
+    }
+    
+      .faceexp img {
+        height: 6rem;
+        width: 6rem;
+        margin-left: 14rem;
+        margin-top: 1rem;
+    }
+
+    .register-msg {
+        margin-top: 1.6rem;
+        margin-left: 12.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .other-msg {
+        margin-top: 0.2rem;
+        margin-left: 13.4rem;
+        font-size: 0.8rem;
+    }
+    
+    .Authproviders {
+        margin-left: -1rem;
+        margin-top: 1rem;
+    }
+    
+    .Authproviderbutton {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 4rem;
+        margin-left: 2rem;
+    }
+    
+    .social-icon {
+        font-size: 1.3rem;
+        margin-left: 0.5rem;
+        margin-top: 0.4rem;
+    }
+    
   }
 
-  /*for mobile device */
+  /*for mobile devices and small devices */
   @media only screen and (max-width: 767px) {
-    .form-group {
+    .faceexp img {
+        height: 5rem;
+        width: 5rem;
+        margin-left: 13rem;
+        margin-top: 1rem;
+    }
+    .form-group{
         margin-top: 1.6rem;
         margin-left: 21%;
         padding: 0.3rem;
-        width: 102%;
+        width:10rem;
     }
-    label{
-        display: block;
-        font-weight: bold;
-        font-size: 1.6rem;
+    label {
+        font-size: 1rem;
         margin-left: 0.4rem;
     }
     
-    .form-input {
-        width: 25rem;
+    .form-input{
+        width: 17rem;
+        border-radius: 0.8rem;
+        margin-top: 0.4rem;
+        padding: 0.1rem;
     }
+
     
     .fa {
         margin-bottom: auto;
         margin-top: auto;
-        font-size: 2.1rem;
+        font-size: 1.4rem;
         margin-left: 0.5rem;
         color: #d1c9fb;
-    }
-    
-    input {
-        width: 18rem;
-        margin-top: 0.15rem;
-        margin-right: auto;
-        margin-left: 4.3rem;
     }
     
     .append-icon{
         margin-right: 5rem !important;
         margin-left: 2rem;
     }
-    .signin {
-        font-size: 1.5rem;
-        margin-left: 16.3rem;
-    }
 
-    .register-msg{
-        margin-top: 2.5rem;
-        font-size: 1.7rem;
+
+    input {
+        width: 18rem;
+        margin-top: 0.15rem;
+        margin-right: auto;
+        margin-left: 0.3rem;
     }
+    
+    .signin {
+        font-size: 0.9rem;
+        margin-left: 8.3rem;
+        width: 13rem;
+    }
+    
+    .register-msg{
+        margin-top: 1.6rem;
+        margin-left: 10rem;
+        font-size: 0.9rem;
+    }
+    
+    .other-msg {
+        margin-top: 0.2rem;
+        margin-left: 10.1rem;
+        font-size: 0.8rem;
+    }
+    
+   
+    
+    .Authproviderbutton{
+        height: 2rem;
+        width: 2rem;
+        border-radius: 4rem;
+        margin-left: 2rem;
+    }
+    
+    .social-icon{
+        font-size: 1.3rem;
+        margin-left: 0.5rem;
+        margin-top: 0.4rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .faceexp img {
+        margin-left: 12rem;
+    }
+    
+    .form-group{
+      margin-left: 5.5rem;
+    }
+    
+   
 }
